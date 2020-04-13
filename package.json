@@ -1,6 +1,6 @@
 {
   "name": "@jesster2k10/rn-progress-hud",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Imperative Progress HUD for React Native, inspired by SVProgressHUD on iOS",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
