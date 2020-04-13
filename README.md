@@ -7,13 +7,13 @@ Imperative Progress HUD for React Native, inspired by SVProgressHUD on iOS. Work
 ## Installation
 
 ```sh
-npm install rn-progress-hud
+npm install @jesster2k10/rn-progress-hud
 ```
 
 ## Usage
 
 ```js
-import ProgressHUD from 'rn-progress-hud';
+import ProgressHUD from '@jesster2k10/rn-progress-hud';
 
 // ...
 
