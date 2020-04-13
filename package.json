@@ -11,7 +11,7 @@
     "lib",
     "android",
     "ios",
-    "rnprogresshud.podspec"
+    "rn-progress-hud.podspec"
   ],
   "scripts": {
     "test": "jest",
