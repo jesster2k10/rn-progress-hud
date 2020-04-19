@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View, Button, Platform, Text } from 'react-native';
-import ProgressHUD from 'rn-progress-hud';
+import ProgressHUD from '../../src';
 
 ProgressHUD.dismiss();
 export default function App() {
@@ -65,6 +65,10 @@ export default function App() {
         />
         <Button title="Show with Progress" onPress={showWithProgress} />
         <Button title="Dismiss" onPress={() => ProgressHUD.dismiss()} />
+        <Button
+          title="Dismiss (2 second delay)"
+          onPress={() => ProgressHUD.dismiss(2000)}
+        />
       </View>
       <View style={styles.section}>
         <Button
