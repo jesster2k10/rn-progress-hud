@@ -26,8 +26,10 @@ export default class ProgressHUD {
     }
   }
 
-  static dismiss() {
-    RNProgressHUD.dismiss();
+  static dismiss(delay: number = 0) {
+    setTimeout(() => {
+      RNProgressHUD.dismiss();
+    }, delay);
   }
 
   static setFont(fontName: string, fontSize: number) {
