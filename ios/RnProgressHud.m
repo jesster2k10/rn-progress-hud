@@ -4,7 +4,7 @@
 @interface RCT_EXTERN_MODULE(ProgressHUD, NSObject)
 
 RCT_EXTERN_METHOD(show: (NSString *)status style:(NSString*)style)
-RCT_EXTERN_METHOD(dismiss: (float) delay)
+RCT_EXTERN_METHOD(dismiss)
 RCT_EXTERN_METHOD(setFont: (NSString*)fontName fontSize:(CGFloat)size)
 RCT_EXTERN_METHOD(setBackgroundColor: (UIColor*) color)
 RCT_EXTERN_METHOD(setBackgroundLayerColor: (UIColor*) color)

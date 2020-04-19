@@ -28,9 +28,9 @@ class ProgressHUD: NSObject {
     SVProgressHUD.showProgress(progress, status: status)
   }
   
-  @objc func dismiss(_ delay: Float = 0) {
+  @objc func dismiss() {
     DispatchQueue.main.async {
-      SVProgressHUD.dismiss(withDelay: TimeInterval(delay))
+      SVProgressHUD.dismiss()
     }
   }
   

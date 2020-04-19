@@ -15,6 +15,10 @@ export default class ProgressHUD {
     status?: string | null,
     style: ProgressHUDDisplayStyle = 'default'
   ) {
+    if (Platform.OS === 'android') {
+      RNProgressHUD.dismiss();
+    }
+
     if (style === 'progress' && Platform.OS === 'ios') {
       RNProgressHUD.show(status, null);
     } else {
@@ -22,8 +26,8 @@ export default class ProgressHUD {
     }
   }
 
-  static dismiss(delay: number = 0) {
-    RNProgressHUD.dismiss(delay);
+  static dismiss() {
+    RNProgressHUD.dismiss();
   }
 
   static setFont(fontName: string, fontSize: number) {

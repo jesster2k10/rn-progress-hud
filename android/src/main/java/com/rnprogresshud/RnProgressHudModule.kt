@@ -47,7 +47,7 @@ class RnProgressHudModule(reactContext: ReactApplicationContext) : ProgressModul
     }
 
   @ReactMethod
-  fun dismiss(delay: Float = 0f) {
+  fun dismiss() {
     reactApplicationContext.runOnUiQueueThread {
       progressHud.dismissImmediately()
     }
